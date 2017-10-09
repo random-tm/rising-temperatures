@@ -1,0 +1,24 @@
+<style>
+  .background {
+    background-image: url("/images/start-background.jpg");
+  }
+</style>
+
+<div class="background">
+  <h2>Progress So Far</h2>
+  <p visible="gameState.planetHealth == 112" class="center-element text">
+    Your climate related decisions are setting an exemplary record for your peers.
+  </p>
+  <p visible="gameState.planetHealth == 92" class="center-element text">
+    It would appear that you learned from your previous decision.
+  </p>
+  <p visible="gameState.planetHealth == 70" class="center-element text">
+    A scientific report came in today stating the temperatures were rising.
+  </p>
+  <p class="center-element text">
+
+  </p>
+  <div class="center-element">
+    <button onclick="engine.nextPage()">Continue</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<style>
+  .background {
+    background-image: url("/images/smoke.jpg");
+  }
+</style>
+
+<div class="background">
+  <p visible="gameState.planetHealth == 110" class="center-element text">
+    Accepting the new ordinance has increased public opinion while also making things just a hair greener.
+  </p>
+  <p visible="gameState.planetHealth == 90" class="center-element text">
+    The budget looks a bit better, but at what cost.
+  </p>
+  <p class="center-element text">
+    A new proposal for air pollution controls has been proposed.
+    Your supporters however are strongly opposed to the idea.
+    Would you like to accept it?
+  </p>
+  <div class="spacer">
+    <button class="center-element" onclick="engine.nextPage(); engine.increaseState('planetHealth', 2)">Yes</button>
+    <button class="center-element" onclick="engine.nextPage(); engine.reduceState('planetHealth', 20)">No</button>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<style>
+  .background {
+    background-image: url("/images/start-background.jpg");
+  }
+</style>
+
+<div class="background">
+  <h2>Progress So Far</h2>
+  <p visible="gameState.planetHealth < 0" class="center-element text">
+    The geo-engineering project appears to have failed resulting in complete devestation of the planet.
+  </p>
+  <p visible="gameState.planetHealth >= 70 && gameState.planetHealth < 100" class="center-element text">
+    You did manage to survive without destroying the planet.
+  </p>
+  <p visible="gameState.planetHealth >= 100" class="center-element text">
+    Your flawless record record is an inspiration for the hope of this planet.
+  </p>
+  <div class="center-element">
+    <button onclick="engine.nextPage()">Credits</button>
+  </div>
+</div>

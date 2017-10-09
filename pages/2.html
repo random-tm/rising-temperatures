@@ -1,0 +1,15 @@
+<style>
+  .background {
+    background-image: url("/images/trash.jpg");
+  }
+</style>
+
+<div class="background">
+  <p class="center-element text">
+    A new recycling ordinance is available do you wish to approve it?
+  </p>
+  <div class="spacer">
+    <button class="center-element" onclick="engine.nextPage(); engine.increaseState('planetHealth', 10)">Yes</button>
+    <button class="center-element" onclick="engine.nextPage(); engine.reduceState('planetHealth', 10)">No</button>
+  </div>
+</div>
